@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #282c34;
+    color: white;
+  }
+  .container {
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  .controls {
+    margin: 10px 0;
+  }
+  .tower {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    height: 300px;
+    border: 2px solid #ccc;
+    position: relative;
+    margin: 0 1%;
+  }
+  .rod {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 10px;
+    height: 100%;
+    background-color: red;
+    transform: translateX(-50%);
+  }
+  .disk {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 20px;
+    background-color: rgb(60, 154, 60);
+    transform: translateX(-50%);
+    text-align: center;
+    line-height: 20px;
+    cursor: grab;
+    border-radius: 5px;
+    
+  }
+  .disk.dragging {
+    opacity: 0.5;
+  }
+  .highlight {
+    background-color: yellow !important;
+  }
+  .buttons button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .message {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(56, 233, 56);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .timer {
+    margin-top: 10px;
+    font-size: 25px;
+    color: lightblue;
+    font-weight: bold;
+ 
+  }
+
+  #Head-Text{
+    font-size: 50px;
+    font-weight: bold;
+ 
+  }
+
+  #Disks-Text{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(238, 209, 20);
+  }
+  #diskCount{
+    font-size: 25px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: bisque;
+  }
+  button{
+    background-color: rgb(43, 185, 233);
+    font-size: 25px;
+    border-radius: 10px;
+    margin-left: 10px;
+
+  }
+  button:hover{
+    background-color: rgb(75, 254, 237);
+  }
+
+  #Minimum-Text{
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: rgb(230, 153, 184);
+
+  }
+  #Move-Text{
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: rgb(249, 180, 50);
+
+  }
+
+  
+
+ 

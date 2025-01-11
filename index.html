@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tower of Hanoi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="Head-Text">Tower of Hanoi Game</h1>
+    <div class="controls">
+      <label for="diskCount" id="Disks-Text">Disks:</label>
+      <input type="number" id="diskCount" value="3" min="1" max="8">
+      <button id="Restart-Button" onclick="restartGame()">Restart</button>
+      <button onclick="solveGame()">Solve</button>
+    </div>
+    <div class="game">
+      <div class="tower" id="tower1" data-tower="0">
+        <div class="rod"></div>
+      </div>
+      <div class="tower" id="tower2" data-tower="1">
+        <div class="rod"></div>
+      </div>
+      <div class="tower" id="tower3" data-tower="2">
+        <div class="rod"></div>
+      </div>
+    </div>
+    <div class="info">
+      <p id="Move-Text">Moves: <span id="moveCount">0</span></p>
+      <p id="Minimum-Text">Minimum Moves: <span id="minMoves">7</span></p>
+      <p class="timer">Time: <span id="timer">0:00</span></p>
+    </div>
+    <div class="message" id="completionMessage"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
